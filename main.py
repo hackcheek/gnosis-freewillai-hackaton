@@ -1,3 +1,4 @@
+import asyncio
 import freewillai
 from keras.models import load_model
 from web3.middleware import geth_poa_middleware
@@ -30,4 +31,4 @@ model = load_model("keras_model_dnn/")
 dataset = "keras_testing_dataset.csv"
 
 # Run on Freewillai
-result = await freewillai.run_task(model, dataset, provider=gnosis_testnet)
+result = asyncio.run(freewillai.run_task(model, dataset, provider=gnosis_testnet))
