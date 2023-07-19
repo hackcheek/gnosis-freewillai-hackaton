@@ -18,6 +18,9 @@ forge create contracts/TaskRunner.sol:TaskRunner \
     --private-key [metamask-private-key]
     --constructor-args [token-address]
 
+### Put the private key in .env
+```bash
+PRIVATE_KEY=0x...
 ```
 ### export addresses as environ variables
 Repeat with nodes
