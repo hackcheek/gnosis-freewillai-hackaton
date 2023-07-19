@@ -21,6 +21,7 @@ forge create contracts/TaskRunner.sol:TaskRunner \
 
 ### Put the private key in .env
 ```bash
+# .env
 PRIVATE_KEY=0x...
 ```
 
