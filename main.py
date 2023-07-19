@@ -32,3 +32,4 @@ dataset = "keras_testing_dataset.csv"
 
 # Run on Freewillai
 result = asyncio.run(freewillai.run_task(model, dataset, provider=gnosis_testnet))
+print("Result:", result)
